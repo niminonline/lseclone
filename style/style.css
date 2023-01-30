@@ -1,0 +1,43 @@
+.main{
+
+    height:100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: auto;
+}
+
+.search-bar{
+    height: 40px;
+    text-align: right;
+    border: 1px solid #E6E6E6;
+    width: 336px;
+    padding: 15 px;
+    margin-left: 80%;
+
+}
+#search-box
+{   padding: 8 48 8 16;
+    height: 22px;
+    width: 270px;;
+    outline: none;
+    border: none;
+}
+#nav-logo{
+    height: 88px;
+    width: 160px;
+}
+#navbar-menu{
+    display: flex;
+    text-decoration: none;
+}
+.menu-items{
+    display: flex;
+}
+.slider-section{
+    height: 375px;
+    width: 100%;
+}
+#marquee-text{
+    display: flex;
+    width: auto;
+}
