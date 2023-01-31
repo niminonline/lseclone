@@ -11,60 +11,74 @@
 </head>
 <body>
     <div class="main">
+       <div class="body-block">
         <div class="search-bar">
             <input id="search-box" type="text" placeholder="Search for quotes, news, documents">
             <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
                 </div>
+
         <div class="nav-bar-section">
             <div id="nav-logo">
                 <img src="images/lse_logo.svg" alt="">
-                <div id="navbar-menu">
-                    <ul>
-                        <li class="menu-items" ><a href="#"> Discover</a><span class="menu-button-seperator"></span></li>
-                        <li class="menu-items"><a href="#"> News and Prices</a><span class="menu-button-seperator"></span></li>
-                        <li class="menu-items"><a href="#"> Raise finance</a><span class="menu-button-seperator"></span></li>
-                        <li class="menu-items"><a href="#"> Securities Trading</a><span class="menu-button-seperator"></span></li>
-                        <li class="menu-items"><a href="#"> Personal investing</a><span class="menu-button-seperator"></span></li>
-                        <li class="menu-items"><a href="#"> Resources</a><span class="menu-button-seperator"></span></li>
+            </div>
+                <div class="navbar-menu">
+                    <ul class="menu-list">
+                        <li class="menu-items"><a class="menu-items" href="#"> Discover</a><span class="menu-button-seperator"></span></li>
+                        <li class="menu-items"><a class="menu-items" href="#"> News and Prices</a><span class="menu-button-seperator"></span></li>
+                        <li class="menu-items"><a class="menu-items" href="#"> Raise finance</a><span class="menu-button-seperator"></span></li>
+                        <li class="menu-items"><a class="menu-items" href="#"> Securities Trading</a><span class="menu-button-seperator"></span></li>
+                        <li class="menu-items"><a class="menu-items" href="#"> Personal investing</a><span class="menu-button-seperator"></span></li>
+                        <li class="menu-items"><a class="menu-items" href="#"> Resources</a><span class="menu-button-seperator"></span></li>
                     </ul>
-                </div>
-                <div class="user-menu">
-                    <i class="fa-regular fa-user"></i>
-                    <img src="images/more-icon.svg" alt="show applications">                    
+               
+                    <i class="menu-items-user fa-regular fa-user"></i>
+                    <img class="menu-items-user" id="show-app" src="images/more-icon.svg" alt="show applications">                    
                 </div>
             </div>
 
         </div>
+
+
+      
         <div class="slider-section">
-            <!-- <img src="images/slider-img-1.png" alt="Slider-image"> -->
+            <img src="images/slider-img-1.png" alt="Slider-image">
         </div>
 
-        <div id="marquee-text">
+        <div class="body-block">
+        
             <marquee behavior="scroll" scrollamount="5" direction="left">
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <!-- <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div> 
-                <div class="marquee-item"> <div class="company ">ADMIRAL</div> <div class="share-price"> 500</div> 
-                        <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> </div>  -->
+                <div class="marquee-text">
 
+                <div class="marquee-item">
+                     <div class="company ">ADMIRAL</div> 
+                     <div class="marque-line-2">
+                     <div class=" share-price"> 500</div> 
+                    <div class="price-change-positive" > <i class="fa-solid fa-caret-up"></i> +1.05%</div>
+                 </div> 
+                </div>
+                  <div class="marque-line-2">
+                <div class="marquee-item"> <div class="company ">ADMIRAL</div> 
+               <div class="marque-line-2">
+                <div class="share-price"> 500</div> 
+                    <div class="price-change-negative " > <i class="fa-solid fa-caret-down"></i> +1.05%</div>
+                 </div> 
+                </div>
+                <div class="marquee-item"> <div class="company ">ADMIRAL</div>
+                <div class="marque-line-2">
+                 <div class="marque-line-2 share-price"> 500</div> 
+                    <div class="price-change" > <i class="fa-solid fa-caret-up"></i> +1.05%</div> 
+                </div> 
+            </div>
 
             </marquee>
         </div>
 
-        <div class="market-section">
-            <div class="markets">
-                <div class="markets-latest" >Markets latest <p>Select an index to see the risers, fallers and volume leaders</p> </div>
+      <div class="full-width-div">
+        <div class="body-block">
+        <div class="market-section markets-col">
+            <div class="markets ">
+             <div class="markets-latest "> <h3>MARKETS LATEST</h3>  <p>Select an index to see the risers, fallers and volume leaders</p> 
+            </div>
                 <div class="indices">
                     <table class="indices-table">
                         <tr>
@@ -90,12 +104,12 @@
 
                     <p>As at 30.01.23 09:43:53 - All data delayed at least 15 minutes.</p>
                 </div>
-
-                <div class="indices-expanded">
-                    <ul class="indices-exp-title">
-                        <li>Risers</li>
-                        <li>Fallers</li>
-                        <li>Volume leaders</li>
+            </div>
+                <div class="indices-expanded ">
+                    <ul >
+                        <li class="indices-exp-title">Risers</li>
+                        <li class="indices-exp-title">Fallers</li>
+                        <li class="indices-exp-title">Volume leaders</li>
                     </ul>
                     <table>
                         <tr>
@@ -115,6 +129,8 @@
                 </div>
             </div>
         </div>
+        
+        <div class="body-block">
     <div class="quick-links">
         <div class="q-l-icon-text">
             <img src="images/quicklinks.png" alt="Quick Links"> <span>Quick Links</span>
@@ -133,6 +149,7 @@
                 </tr>
             </table>
         </div>
+    </div>
     </div>
 
     <div class="latest-news">
@@ -200,6 +217,9 @@
         <a href="">Personal investing</a>
         </div>
     </div>
+    </div>
+</div>
+
     <div class="blue-line"></div>
     <footer>
         <div class="footer-col-icon">
