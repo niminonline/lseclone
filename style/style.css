@@ -58,8 +58,11 @@ justify-content: flex-end;
     margin: 5px ;
     color: var(--menu-text-color);
     padding-right: 10px;
+    padding-bottom: 15px;
     border-right: 1px solid var(--footer-heading-color);
-
+}
+.menu-items a:hover{
+    border-bottom: 5px solid var(--primaryblue);
 }
 .menu-items-user{
     color: var(--menu-text-color) ;
@@ -101,15 +104,45 @@ justify-content: flex-end;
 .price-change-negative{
     color: var(--negative-color);
 }
+
+.full-width-div{
+    background-color: var(--body-bg-grey-color);
+    padding: 20px 0px;
+}
+
 .markets-col{
     display: flex;
     justify-content: space-between;
+}
+.indices-table{
+ width: 100%;
+}
+.indices-table tr td{  
+    padding-top: 10px;
+    background-color: var(--body-white-bg);
+    
 }
 .indices-exp-title{
     text-decoration: none;
     display: inline;
     margin: 20px 30px ;
 }
+.blue-button{
+    background:var(--primaryblue);
+    border: 0.0625rem solid var(--primaryblue);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5089rem 1.651785rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
 .quick-links{
     display: flex;
     justify-content: space-between;
@@ -164,7 +197,6 @@ footer{
 .footer-logo{
     height: 90px;
     width: 180px;
-
 }
 .footer-col ul{
 padding-left: 0px;
