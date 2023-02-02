@@ -9,9 +9,12 @@ body{
 
 .body-block{
     width: 65%;
-    margin: 10px 18%;
+    margin: 0px 18%;
+    
 }
-
+td{
+    font-size: .9rem;
+}
 .search-bar{
     height: 35px;
     border: 0.1px solid  var(--footer-heading-color);
@@ -82,11 +85,11 @@ justify-content: flex-end;
 }
 .marquee-text{
     display: flex;
-    margin: 5px 10px;
+    margin: 5px 1px;
 }
 
 .marquee-item{
-    margin: 5px 15px;
+    margin: 5px 25px;
 }
 #show-app{
     width: 18px;
@@ -101,6 +104,14 @@ justify-content: flex-end;
 .price-change-positive{
     color: var(--positive-color);
 }
+.price-change-positive-ftse{
+    color: var(--positive-color);
+    display: inline;
+}
+.price-change-negative-ftse{
+    color: var(--negative-color);
+    display: inline;
+}
 .price-change-negative{
     color: var(--negative-color);
 }
@@ -112,20 +123,59 @@ justify-content: flex-end;
 
 .markets-col{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
-.indices-table{
- width: 100%;
+.delayed-text{
+    font-size: .8rem;
+    color:  #4d4d4d;
+    padding-bottom: 50px;
+}
+.indices{
+    background-color: white;
+    padding-left: 10px;
+}
+.indices-table {
+    margin: 50px 300px 50px 0px;
+    width: 100%;
+    
+}
+#index-name-left-border{
+    border-left: 4px solid blue;
+}
+.align-right{
+    text-align: right;
+}
+.indices-expanded{
+    background-color: white;
+    padding: 30px;
+}
+.index-name{
+    font-weight: bold;
+}
+.caret{
+    padding:0px 6px;
 }
 .indices-table tr td{  
-    padding-top: 10px;
+    
+    padding: 10px;
     background-color: var(--body-white-bg);
     
 }
+.indices-exp-title-ul{
+    display: flex;
+    border-bottom: 2px solid #b2b2b2;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+.indices-exp-title-ul li:first-child{
+    border-bottom: 4px solid blue;
+}
+
 .indices-exp-title{
-    text-decoration: none;
     display: inline;
-    margin: 20px 30px ;
+    padding: 20px 30px;
+   
 }
 .blue-button{
     background:var(--primaryblue);
@@ -144,12 +194,17 @@ justify-content: flex-end;
 }
 
 .quick-links{
+    margin-top:30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .q-l-icon-text{
     display: flex;
     align-items: center;
+    
+}
+.latest-news{
+    margin:100px 0px;
 }
 .latest-news-container{
     display: flex;
@@ -162,12 +217,43 @@ justify-content: flex-end;
 .latest-news-thumbnail{
     width: 100%;
 }
+.news-heading{
+    font-size: .984375rem;
+    font-weight: 700;
+}
+.news-body{
+    font-size: .9rem;
+    line-height: 1.78em;
+}
+.why-investing{
+    width:50%;
+}
 .webcast-section{
     display: flex;
+}
+.webcast-body-text{
+    font-size: .984375rem;
+    line-height: 1.78em;
+}
+.learn-section{
+    margin: 100px 0px;
 }
 .personal-inv-container{
   display: flex;
   justify-content: space-between;
+  gap:30px;
+
+}
+.personal-inv-thumbnail{
+    width:100%;
+}
+.personal-investing-title{
+    font-size: .984375rem;
+    font-weight: 700;
+}
+.personal-investing-body{
+    font-size: .984375rem;
+    line-height: 1.78em;
 }
 .journey-to-growth-sec{
     position: relative;
@@ -175,37 +261,85 @@ justify-content: flex-end;
 .journey-to-growth-block{
     width:400px;
     height: 400px;
-    background-color: #E6E6E6;
+    background-color: #ffffff;
    position: absolute;
    right: 0px;
    top:30px;
+   padding: 30px 20px;
+   line-height: 30px;
+  
+}
+.journey-to-growth-block p,a{
+    font-size: .984375rem;
+    line-height: 1.78em;
+    
+}
+.journey-to-growth-block a{
+    color:#001eff;
+
+}
+.journey-to-growth-image{
+    width:100%;
 }
 .blue-line{
     height: 10px;
-    background-color: #007bff;
+    background-color: #001eff;
+    margin: 0x;
+    padding: 0px;
 }
 footer{
+    margin-top:0px;
     background-color: #1a1a1a ;
+    background-image: url(../images/footer-background.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 630px;
 }
 
 .footer-container{
     display: flex;
+    padding-top: 50px;
     justify-content: space-evenly;
-    align-items: center;
+
     color: rgb(255, 255, 255);
 }
 .footer-logo{
+    margin-top:20px;
     height: 90px;
     width: 180px;
 }
 .footer-col ul{
 padding-left: 0px;
+
 }
+
 .footer-menu-item {
     list-style: none;
     margin-left: 0%;
 }
 .footer-menu-item a {
     text-decoration: none;
-    color: grey;
+    color: #ccc;
+    font-size: .9375rem;
+}
+.ftse100-blue-text{
+    color: blue;
+}
+.body-block-quicklinks{
+    background-color: white;
+}
+
+.quick-links{
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+.quick-links-items tr td{
+    padding: 10px 50px;
+}
+#copyright{
+    margin-top:200px;
+    color: gray;
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 500;
 }
